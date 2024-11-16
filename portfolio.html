@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+
+body{
+
+    background: radial-gradient(circle at -4% -12.9%, rgb(79, 184, 119) 0.3%, rgb(30, 33, 48) 90.2%);
+}
+.header{
+    border: 1px solid rgb(0, 255, 221);
+    margin:15px;
+    margin-right: 20px;;
+    position:relative ;
+    top:0;
+    left:0;
+    width:98%;
+    border-radius:25px;
+    padding: 20px 10%;
+    background:transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+     z-index: 100;
+     margin-bottom: 50px;
+     border:none;
+     box-shadow: 0px 25px 20px -20px rgba(111, 103, 103, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+img{
+    margin: 50px 50px 50px 50px;
+    width:190px;
+    height:190px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border: 1px solid white;
+    box-shadow: 20px;
+    border-radius:50px;
+    box-shadow: 0px 25px 20px -20px rgba(210, 205, 205, 0.45), -25px 0 20px -20px rgba(246, 235, 235, 0.45);
+    
+   
+}
+table{
+    border:1px solid rgb(58, 171, 58);
+
+    margin-top:20px;
+    margin-left: 15px;;
+    width: 98%;;
+    height: 50px;;
+    border-radius:25px;
+    border:none;
+    box-shadow: 0px 25px 20px -20px rgba(31, 228, 146, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+table:hover{
+  
+    background-color:rgb(73, 110, 180) ;
+   
+}
+
+.about{
+    color:white;
+    padding:50px;
+}
+
+.navbar a{
+  align-items: center;
+    justify-content:space-between;
+    color:white;
+}
+
+.logo{
+    color:white;
+}
+.btn-box a{
+    position:relative;
+    width: 150px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+    background: #224a5a;
+    border: 2px solid #092e0e;
+    border-radius: 8px;
+    font-size: 19px;
+    color:#222e34;
+    text-decoration: none;
+    font-weight: 600 ;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:nth-child(1){
+    position: relative;
+    background: transparent;
+    color:#141515
+}
+
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color:#1d1e1d
+}
+.btn-box{
+    display:flex;
+    justify-content:space-between  ;
+    align-items:center;ssss
+  width: 345px;
+  height: 50px;
+  margin-top: 30px;
+  
+}
+.btn-box a:before {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0 ;
+    height: 100%;
+    background: rgb(175, 17, 72);
+   transition:.5s;
+    z-index: -1;
+    transition:.5s;
+    
+}
+.btn-box a:hover::before{
+     width: 100%;
+     color: rgb(192, 213, 55);
+     
+}
+.skills{
+    border: 1px solid green;
+    margin-top:20px;
+    margin-left:20px;
+    margin-bottom: 20px;
+    padding:20px;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    border:none;
+    color:white;
+    border-radius:20px;
+font-style: italic;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+
+.projects{
+    border:1px solid red;
+    margin-top:20px;
+    margin-left:20px;
+    margin-bottom: 20px;
+    padding:20px;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    border:none;
+    color:white;
+font-style: italic;
+transition-property: all;
+transition-duration: 1s;
+transition-delay: 0s;
+transition-timing-function: linear;
+border-radius: 20px;
+
+}
+
+.projects:hover{
+  
+    background-color:rgb(174, 80, 177) ;
+   
+}
+
+    
+
+.skills:hover{
+  
+    background-color:rgb(73, 144, 23) ;
+   
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    }
+    
+    .home-sci a{
+        position:relative;
+        display:inline-flex;
+        justify-content:center;
+        align-items: center;
+        width: 30px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #00acf0de;
+        border-radius: 50%;
+        font-size: 20px ;
+        color: #d8d627;
+        cursor: grabbing;
+        text-decoration: none;
+        z-index:1;
+        overflow:hidden;
+        transition: .5s;
+    }
+    .home-sci a:hover{
+        color:#32729f
+    
+    }
+
+    .contact{
+        border:1px solid red;
+        margin-top:20px;
+        margin-left:20px;
+        margin-bottom: 20px;
+        padding:20px;
+        box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+        border:none;
+        color:white;
+        border-radius: 20px;
+    font-style: italic;
+    transition-property: all;
+transition-duration: 1s;
+transition-delay: 0s;
+transition-timing-function: linear;
+
+    }
+
+    .contact:hover{
+  
+        background-color:rgb(205, 30, 62) ;
+       
+    }
+
+
+
+    .contact a{
+        width: 50px;
+        color:white;
+        display:inline-flex;
+        justify-content:center;
+        align-items: center;
+    }
+</style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Rakshitha.</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#sk">Skills</a>
+            <a href="#pro">Projects</a>
+            <a href="#con">Contact</a>
+        </nav>
+    </header>
+ <table id="home">
+    <tr>
+        <td class="about"><h1>Hi, I'm  Rakshitha </h1> <br>
+            <h2>Web Developer</h2><br>
+              <h3>  Welcome to my webpage......</h3><br> 
+              <h4>I love crafting responsive and user-friendly web interfaces. My skills in HTML, CSS, and JavaScript help me turn ideas into visually appealing websites.<br>Let's build something amazing together!</h4>
+              <div class="btn-box">
+                <a href="#con">Contact</a>
+                <a href="c:\Users\prajw\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\043C3D7E489C69B48737CC0C92D0F3A2\Prajwal. resume.pdf">Resume</a>
+                
+                </div>
+            </td>
+        <td><img src="me2.jpg" alt="pic"></td>
+    </tr>
+ </table>
+ <div class="skills" id="sk">
+    <h1>Skills and Experience</h1><br>
+<l>
+    <li>Html</li>
+    <li>Css</li>
+    <li>Java Script</li>
+    <li>python</li>
+    <li>Leadership</li>
+    <li>problem solving</li>
+    <li>Strategy</li>
+    
+    
+</ul>
+ </div>
+
+ <div class="projects" id="pro">
+    
+ 
+ <h1>Projects</h1><br>
+ <l>
+    <li>Portfolio <br><br>I have Created a personal portfolio using CSS and HTML is a popular beginner web development project and successful in building it.</li> <br>
+    <li>Landing Page <br> <br>I have a created a landing page which involves in usage of HTML and CSS and successful in building it.</li><br>
+    <li>Calculator <br><br> I have a created a basic calcualtor which involves in usage of HTML,CSS and JavaScript and successful in building it.</li><br>
+    
+</ul>
+</div>
+</div>
+<div class="contact" id="con">
+   <h1>Contacts</h1><br>
+   <pre>   Phone Number : 7899815573
+
+   Gmail : kmrakshitha936@gmail.com </pre><br><br>
+        <a href="https://www.instagram.com/rakshitha_katigellimat/profilecard/?igsh=aXc4MmczazlkMHMz/"target="_blank"<i class='bx bxl-instagram'></i></a>
+        <a href="https://https://www.linkedin.com/in/rakshitha-k-m-40435731a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class='bx bxl-linkedin'></i></a>
+        <a href=" "><i class="fa fa-twitter"></i></a>
+  
+    </div>
+
+    
+</div>
+</body>
+</html>
